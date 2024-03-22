@@ -244,7 +244,8 @@ span {
         top: -0.8vh
     }
 }
-
+.arrow{
+}
 .lineone {
     display: flex;
     margin-top: 2vh;
@@ -417,7 +418,7 @@ span {
     content: "";
     height: 2px;
     width: 100%;
-    background-color: #18272F;
+    background-color: #18272F;          
     margin-bottom: 5vw;
     transition: all 0.3s linear;
 }
@@ -602,25 +603,43 @@ span {
     }
     .content {
         width: 100vw;
-        margin-top: 2vh;
+        margin-top: 0vh;
         height: 100vh;
         align-items: center;
+        justify-content: center;
+        display: flex;
         position: relative;
     
     }
     .card{
-         left: 35%;
-        top: 22%;
+         left: 0%;
+        top: 0%;
+        /* display: flex; */
+        justify-content: space-between;
         width: 33vw;
-        height: 6vh;
+        height: 4vh;
     }
     .partone {
         width: 66vw;
         height: fit-content;
-        font-size: 3.8vw;
+        align-items: center;
+        font-size: auto;
         padding-right: 2vw;
         line-height: 2.5vh;
     }
+    .lineone{
+        /* display: flex; */
+        /* align-items: center; */
+        justify-content: space-between;
+        padding: 0;
+    }
+    .lineone h1
+    {
+        position: relative;
+        padding-inline: 0.7vw;
+        top: -1vh;
+    }
+   
     
     .parttwo {
         height: fit-content;
@@ -654,4 +673,44 @@ span {
         flex-wrap: wrap;
         height: fit-content;
     }
+    .linetwo {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2vh;
+        justify-content:flex-start;
+    }
+    
+    .size {
+        height: 5vh;
+        width: 10vw;
+        /* background-color: burlywood; */
+    }
+    
+    .size img {
+        width: 17vw;
+        height: 20vw;
+        padding-inline: 2vw;
+        object-fit: cover;
+    }
+    .img1{
+        margin-right: 7vw;
+    }
+    .linethree {
+        display: flex;
+        margin-top: 4vh;
+    }
+    .card:hover {
+        height: 20vh;
+    
+        .arrow {
+            rotate: 90deg;
+            top: -1.3vh
+        }
+    }
+    .caption {
+        text-align: center;
+        font-size: 0.37rem;
+        font-family: mono;
+    }
+    
 }
