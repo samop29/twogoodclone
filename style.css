@@ -1,0 +1,657 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilory';
+}
+::selection {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+  }
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding-inline: 1vw;
+    background-color: #f7f7f7;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.parent-div {
+    position: relative;
+}
+
+/* page 1 */
+@font-face {
+    font-family: futura;
+    src: url("https://twogood.com.au/fonts/Futura-Bold.woff2");
+}
+
+@font-face {
+    font-family: mono;
+    src: url("https://twogood.com.au/fonts/HelveticaNowText-Regular.woff2");
+
+}
+
+.page1 {
+    max-height: 100vh;
+    position: relative;
+    width: 100vw;
+    padding-top: 28vh;
+}
+
+.page1 h1,
+span {
+    font-size: 15.7vw;
+    font-family: futura;
+    text-transform: uppercase;
+    line-height: 13vw;
+    letter-spacing: -8px;
+}
+
+.hero-img {
+    margin-top: 3vh;
+    height: 120vh;
+    width: 100vw;
+    background: grey;
+    display: flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* position: relative; */
+    /* bottom: 25vh; */
+
+
+}
+
+.the {
+    padding-right: 5vw;
+}
+
+.second-line {
+    display: flex;
+}
+
+/* second section */
+.second-sec {
+    display: flex;
+    margin-top: 100vh;
+}
+
+.box {
+    height: 100vh;
+    width: 33vw;
+    /* border: 2px solid black; */
+    margin-bottom: 20vh;
+}
+
+.box-1 {
+    padding-top: 5vw;
+    border: none;
+    padding-right: 10vw;
+}
+
+.take {
+    font-family: futura;
+    line-height: 3.5vh;
+    font-size: 1.7vw;
+}
+
+.pera {
+    margin-top: 2.3vw;
+    font-family: mono;
+    font-weight: 10;
+    line-height: 3.4vh;
+    font-size: 1.1vw;
+    /* letter-spacing: 0.1vw; */
+}
+
+.list {
+    margin-top: 5vh;
+    font-family: mono;
+    line-height: 3.5vh;
+}
+
+.anim-take {
+    margin-top: 5vh;
+    width: fit-content;
+    font-family: mono;
+    font-size: 0.8vw;
+    word-spacing: 0.3vw;
+    letter-spacing: 0.1vw;
+    position: relative;
+    text-decoration: none;
+}
+
+.anim-take::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: -1vh;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+
+}
+
+.anim-take:hover {
+    animation: line .5s ease-in-out;
+}
+
+.anim-take:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+
+}
+
+.box-2 {
+    margin-top: 8.5vh;
+    border: none;
+
+}
+
+.box-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-3 {
+    margin-top: 8vh;
+    margin-left: 1.4vw;
+}
+
+.box-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.black-line {
+    width: 100%;
+    border-bottom: 2px solid black;
+    margin-bottom: 2.5vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.thirdsection {
+    display: flex;
+    overflow: hidden;
+}
+
+.content {
+    width: 33vw;
+    height: 100vh;
+    position: relative;
+
+}
+
+.boxone {
+    background-image: url("assets/section-3-1.webp");
+    background-size: cover;
+
+}
+
+.boxtwo {
+    background-image: url("assets/section-3-2.webp");
+    background-size: cover;
+    margin-inline: 1.2vw;
+
+
+}
+
+.boxthird {
+    background-image: url("assets/section-3-3.webp");
+    background-size: cover;
+
+}
+
+.card {
+    height: 7vh;
+    overflow: hidden;
+    position: relative;
+    width: 20vw;
+    padding-inline: 1vw;
+    background-color: yellowgreen;
+    border-end-end-radius: 1.8vw;
+    border-start-start-radius: 1.8vw;
+    border-start-end-radius: 1.8vw;
+    border-end-start-radius: 1.8vw;
+    transition: all 0.2s linear;
+}
+
+.card:hover {
+    height: 37vh;
+
+    .arrow {
+        rotate: 90deg;
+        top: -0.8vh
+    }
+}
+
+.lineone {
+    display: flex;
+    margin-top: 2vh;
+    justify-content: space-between;
+    padding-inline: 2rem;
+}
+
+.dot {
+    font-size: 1.3rem;
+    font-family: futura;
+    position: relative;
+    top: -1vh;
+
+}
+
+.shop {
+    font-size: 0.8rem;
+    font-family: mono;
+}
+
+.otherword {
+    font-size: 0.8rem;
+    font-family: futura;
+}
+
+.arrow {
+    font-size: 1rem;
+    font-family: mono;
+    position: relative;
+    top: -0.3vh;
+    transition: all 0.2s linear;
+
+}
+
+.linetwo {
+    display: flex;
+    margin-top: 6vh;
+}
+
+.size {
+    height: 15vh;
+    width: 10vw;
+    /* background-color: burlywood; */
+}
+
+.size img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.linethree {
+    display: flex;
+    margin-top: 4vh;
+}
+
+.caption {
+    text-align: center;
+    font-size: 0.7rem;
+    font-family: mono;
+}
+.caption:hover{
+    color: rgb(255, 119, 0);
+}   
+
+.cardone {
+    background-color: #f4decf;
+    position: relative;
+    top: 46%;
+    left: 18%;
+}
+
+.cardtwo {
+    background-color: #ecf3fe;
+    position: relative;
+    top: 46%;
+    left: 18%;
+}
+
+.cardthree {
+    background-color: #ffff;
+    position: relative;
+    top: 46%;
+    left: 18%;
+}
+
+.fourthsection {
+    margin-top: 13vh;
+    display: flex;
+}
+
+.partone {
+    width: 66vw;
+    height: 45vh;
+    font-family: futura;
+    font-size: 3.8vw;
+    padding-right: 6vw;
+    line-height: 8.5vh;
+}
+
+.parttwo {
+    height: 45vh;
+    width: 33vw;
+    padding-right: 9vw;
+    font-family: mono;
+    font-weight: 10;
+    line-height: 3.4vh;
+    font-size: 1.1vw;
+
+}
+
+.sectionfive {
+    margin-top: 9vh;
+}
+
+.upperside {
+    display: flex;
+    flex-wrap: wrap;
+    /* transition: all 0.3s linear; */
+}
+
+.lowerside {
+    margin-top: 6vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* transition: all 0.3s linear; */
+}
+
+.side {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.side img {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.price {
+    bottom: -5rem;
+
+    font-family: mono;
+    color: rgba(0, 0, 0, 0.621);
+    font-size: 0.8vw;
+}
+
+.aboutproduct {
+    text-align: center;
+}
+
+.dollar {
+    font-size: 0.6rem;
+    color: #000000b8;
+}
+
+.darkline {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* padding-right: 4vw; */
+    flex-wrap: wrap;
+}
+
+.darkline::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #18272F;
+    margin-bottom: 20vw;
+    transition: all 0.3s linear;
+}
+
+.msg {
+    font-family: mono;
+
+}
+
+.cursor {
+    height: 40vh;
+    width: 20vw;
+    border-radius: 50%;
+    background-color: rgba(0, 191, 255, 0.121);
+    position: fixed;
+    scale: 0;
+    /* transform: translate(-50%, -50%)scale(1) ; */
+}
+.nav{
+    height: 18vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 99;
+    margin-top: 3.7vh;
+    display: flex;
+    justify-content: space-between;
+}
+.links a{
+    text-decoration: none;
+    font-family: mono;
+    padding-inline: 2vw;
+    color: black;
+    font-size: 0.8rem;
+    
+}
+.links a:hover{
+    color: rgb(255, 119, 0);
+}   
+.icons{
+    background-color: #f7f7f7;
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    width: 7vw;
+    border-radius: 2vw;
+    position: relative;
+    top: -1vh;
+}
+.icons i{
+    margin-inline: 0;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.icons i:first-child{
+    padding-right: 3vw;
+}
+
+.nav2{
+    display: flex;
+    margin-right: 5vw;
+    height: 5vh;
+
+}
+.nav1 svg{
+    display:block;
+
+}
+.nav1{
+    height: 11.8vh;
+    overflow: hidden;
+}
+
+@media (max-width:720px) {
+    .nav1 svg{
+        display:block;
+        width: 15vw;
+    }
+    #svg2{
+        display: none;
+    }
+    .links {
+        display: none;
+    }
+    .icons{
+        padding: 4vw;
+        width: 16vw;
+        border-radius: 6vw;
+    }
+    .nav{
+        margin-top: 1.8vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    .page1 {
+        width: 100vw;
+        padding-top: 23vh;
+    }
+    
+    .page1 h1,
+    span {
+        font-size: 15.7vw;
+        line-height: 11vw;
+        letter-spacing: -0.5vw;
+    }
+    
+    .hero-img {
+        margin-top: 2vh;
+        height: fit-content;
+    }
+    .hero-img img {
+        object-fit: contain;
+    }
+    .second-sec {
+        /* flex-wrap: wrap; */
+        margin-top: 0vh;
+        flex-direction: column;
+    }
+    .box {
+        height: 100vh;
+        width: 100vw;
+        /* border: 2px solid black; */
+        margin-bottom: 20vh;
+    }
+    
+    .box-1 {
+        padding-top: 5vw;
+        border: none;
+        padding-right: 10vw;
+    }
+    
+    .take {
+        line-height: 1.9vh;
+        font-size: 2vh;
+        margin-bottom: 6vh;
+    }
+    
+    .pera {
+        margin-top: 2vw;
+        font-weight: 50;
+        line-height:1vh;
+        font-size: 1vh;
+    }
+    .list {
+        line-height: 1.6vh;
+        font-size: 1vh;
+    }
+    
+    .anim-take {
+        margin-top: 1vh;
+        font-size: 0.8vh;
+    }
+    .box {
+        height: 18vh;
+        min-width: 33vw;
+        /* border: 2px solid black; */
+        margin-bottom: 20vh;
+    }
+    .box-2 {
+        margin-top: 1vh;
+        border: none;
+        height: 47vh;
+    
+    }
+    
+    .box-2 img {
+         object-fit: contain;
+    }
+    
+    .box-3 {
+        margin-top: 0vh;
+        height: 67vh;
+        margin-top: -18vh;
+        margin-left: 0vw;
+    
+    }
+    
+    .box-3 img {
+       object-fit: contain;
+    }
+    .thirdsection {
+        flex-wrap: wrap;
+    }
+    .content {
+        width: 100vw;
+        margin-top: 2vh;
+        height: 100vh;
+        align-items: center;
+        position: relative;
+    
+    }
+    .card{
+         left: 35%;
+        top: 22%;
+        width: 33vw;
+        height: 6vh;
+    }
+    .partone {
+        width: 66vw;
+        height: fit-content;
+        font-size: 3.8vw;
+        padding-right: 2vw;
+        line-height: 2.5vh;
+    }
+    
+    .parttwo {
+        height: fit-content;
+        width: 33vw;
+        padding-right: 2vw;
+        line-height: 1.4vh;
+        font-size: 1.1vh;
+    
+    }   
+    .sectionfive {
+        margin-top: 0vh;
+    }
+    .side {
+        width: 100%;
+        margin-top: 10vh;
+        height: fit-content;
+    }
+    .cursor{
+        display: none;
+    }
+    .side img {
+        width: 100%;
+        object-fit: contain;
+    }
+    .price{
+        font-size: 1vh;
+    }
+    .lowerside {
+        margin-top: 0vh;
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+}
