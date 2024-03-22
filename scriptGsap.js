@@ -41,28 +41,28 @@ document.addEventListener("DOMContentLoaded", function () {
 //     }
 
 // })
-gsap.to(".thirdsection .content .card", {
-    y: 290,
-    scrollTrigger: {
-        trigger: ".thirdsection .content .card",
-        scroller: "body",
-        start: "top 35%",
+// gsap.to(".thirdsection .content .card", {
+//     y: 290,
+//     scrollTrigger: {
+//         trigger: ".thirdsection .content .card",
+//         scroller: "body",
+//         start: "top 35%",
 
-        scrub: true
+//         scrub: true
 
-    }
-})
-gsap.from(".thirdsection .content ", {
-    opacity: 0,
-    duration: 0.5,
-    stagger: 0.2,
-    scrollTrigger: {
-        trigger: ".thirdsection .content ",
-        scroller: "body",
-        start: "top 50%"
+//     }
+// })
+// gsap.from(".thirdsection .content ", {
+//     opacity: 0,
+//     duration: 0.5,
+//     stagger: 0.2,
+//     scrollTrigger: {
+//         trigger: ".thirdsection .content ",
+//         scroller: "body",
+//         start: "top 50%"
 
-    }
-})
+//     }
+// })
 // 9930506126
 const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', (e) => {
