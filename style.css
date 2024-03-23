@@ -614,22 +614,20 @@ span {
     .card{
          left: 0%;
         top: 0%;
-        /* display: flex; */
         justify-content: space-between;
-        width: 33vw;
+        width: fit-content;
         height: 4vh;
     }
+   
     .partone {
         width: 66vw;
         height: fit-content;
         align-items: center;
-        font-size: auto;
+        font-size:auto;
         padding-right: 2vw;
         line-height: 2.5vh;
     }
     .lineone{
-        /* display: flex; */
-        /* align-items: center; */
         justify-content: space-between;
         padding: 0;
     }
@@ -677,19 +675,21 @@ span {
         display: flex;
         flex-wrap: wrap;
         margin-top: 2vh;
-        justify-content:flex-start;
+        width: fit-content;
+        
+        justify-content:space-between;
     }
     
     .size {
         height: 5vh;
         width: 10vw;
+
         /* background-color: burlywood; */
     }
     
     .size img {
         width: 17vw;
         height: 20vw;
-        padding-inline: 2vw;
         object-fit: cover;
     }
     .img1{
@@ -697,7 +697,9 @@ span {
     }
     .linethree {
         display: flex;
-        margin-top: 4vh;
+        margin-top: 6vh;
+        flex-wrap: wrap;
+        width: fit-content;
     }
     .card:hover {
         height: 20vh;
@@ -711,6 +713,23 @@ span {
         text-align: center;
         font-size: 0.37rem;
         font-family: mono;
+        width: 15vw;
+        text-align: center;
     }
-    
+    .firstcaption{
+        margin-right: 3vw;
+    }
+    .darkline{
+        margin-top: 7vh;
+    }
+    .lineone h1:first-child{
+        top: -1.5vh;
+    }
+    .lineone h1:nth-child(2){
+        top: -0.8vh;
+    }
+    .lineone h1:nth-child(4){
+        top: -1.2vh;
+    }
+
 }
